@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
@@ -26,6 +27,14 @@ header{
   padding-top: 1%;
   background-repeat: no-repeat;
   background-size: 100.9%;
+=======
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: "Poppins", sans-serif;
+>>>>>>> b5c43de17aed9e0d441bd2e2df7933d8a821aa4b
 }
 
 footer {
@@ -65,3 +74,14 @@ footer {
     margin: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.logo {
+    background: url(/img/bad.jpeg);
+    padding-left: 50%;
+    padding-right: 50%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    width: 10%;
+}
+>>>>>>> b5c43de17aed9e0d441bd2e2df7933d8a821aa4b
