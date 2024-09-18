@@ -1,8 +1,8 @@
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: red;
-    border: 10px;
+    background-color: #730d0d;
+    margin: -10px;
  }
  
  .pic {
@@ -10,3 +10,14 @@ footer {
    height: 100px;
    margin: 10px;
  }
+
+#map {
+    margin: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
