@@ -9,33 +9,23 @@
     <link rel="stylesheet" href="css/gsprint.css">
 </head>
 <body>
-
-    <header>
-        <h1>Aarhus 1900</h1>
-
-        <session>
-            <h2> Herre serie 3</h2>
-            <a>
-                Velkommen til Aarhus' bedste herre fodbold hold
-            </a>
-            <img src="img/bad.jpeg" alt="omklaedning" width="1000" height="800"/>
-        </session>
-    </header>
-
-
-    
-    <main>
-<div class="content">
-<h1>Herrer 2: Serie 2</h1>
-<h2>Herre serie 2</h2>
-<p></p>
-</div>
-    </main>
-
-
+<header>
+    <article>
+        <a href="#">
+        <img id="logo" src="img/1900.gif" alt="logo">
+    </a>
+    </article>
+</header>
 
 
     <footer>
+        <p id="adresse">
+            Aarhus 1900</br>
+            Fodbold Augustenborggade 29</br>
+            Aarhus C</br>
+            aarhus1900fodbold@e-mail.dk
+        </p>
+        <!-- Google maps -->
         <script>
             function myMap() {
             var mapProp= {
@@ -48,17 +38,16 @@
             marker.setMap(map);
             }
         </script>
+            <div id="googleMap" style="width:30%;height:100px;margin:10px"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY_EkdPrXENNrS9yywlMR4escfJyPJ-KA&callback=myMap"></script>
 
-        <div id="googleMap" style="width:20%;height:100px"></div>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY_EkdPrXENNrS9yywlMR4escfJyPJ-KA&callback=myMap"></script>
-
-
-        <a href="https://www.facebook.com/aarhus1900fodbold/?locale=da_DK"><img src="img/facebook.png" alt="facebook icon" class="pic"></a>
-        <a href="https://www.instagram.com/aarhus1900fodbold/"><img src="img/Instagram.png" alt="Instagram icon" class="pic"></a>
-        <a href="https://www.instagram.com/explore/locations/1033069962/brinchs-bodega-aarhus-1900-fodbold/"><img src="img/beer.webp" alt="beer icon" class="pic"></a>
-        <a href="https://aarhus1900.dk/"><img src="img/logo.png" alt="logo" class="pic"></a>
-    
+        <div class="iconer">
+            <a href="https://www.facebook.com/aarhus1900fodbold/?locale=da_DK"><img src="img/facebook.png" alt="facebook icon" class="pic"></a>
+            <a href="https://www.instagram.com/aarhus1900fodbold/"><img src="img/Instagram.png" alt="Instagram icon" class="pic"></a>
+            <a href="https://www.instagram.com/explore/locations/1033069962/brinchs-bodega-aarhus-1900-fodbold/"><img src="img/beer.webp" alt="beer icon" class="pic"></a>
+        </div>
+        
+        <a href="https://aarhus1900.dk/"><img id="storeLogo" src="img/logo.png" alt="logo"></a>
     </footer>
 </body>
 </html>
