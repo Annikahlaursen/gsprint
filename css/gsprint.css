@@ -127,6 +127,7 @@ h1, h2 {
     background-size: 100%;
     background-position: center;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -144,7 +145,7 @@ h1, h2 {
     position: relative;
     margin-bottom: 30px;
     margin-top: -25px;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
         
         /* Next & previous buttons */
@@ -252,10 +253,11 @@ h1, h2 {
     display: flex;
     height: auto;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .kampplan{
-border-radius: 20px;
+    border-radius: 20px;
 }
 
 .camp {
