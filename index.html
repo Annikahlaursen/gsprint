@@ -3,30 +3,171 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Aarhus 1900</title>
-    <link rel="stylesheet" href="css/gsprint.css">
+    <link rel="stylesheet" href="gsprint.css">
+    <link rel="javsscript" href="js.js">
 </head>
+
+
 <body>
 
-    <header>
-        <img class="logo" src="img/beer.webp" alt="omklaedning">
     
-    </header>
+        <header>
+            <article>
+                <a href="#">
+                <img id="logo" src="1900.gif" alt="logo">
+            </a>
+                <a href="medlem.html"><img id="burger" src="bmenu.png" alt="burgermenu">
+                </a>
+            </article>
+        </header>
 
 
-    
+   
+
     <main>
-<div class="content">
-<h1>Herrer 2: Serie 2</h1>
-<h2>Herre serie 2</h2>
-<p></p>
-</div>
+        <div class="flex-container">
+
+            <div class="billede-container">
+                <div class="prik" style="margin-left: 50%;">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <div class="slideshow-container">
+                
+                    <div class="mySlides fade">
+                        <div class="forsteboks">
+                            <div id="forsteBoks">
+                                <h1>HJEMMEKAMP</h1>
+                                <h2>Herre serie 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="andenboks">
+                            <div id="andenBoks">
+                                <h1>Nyt hold</h1>
+                                <h2>Dame serie 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="tredjeboks">
+                        <div id="tredjeBoks">
+                            <h1>Aarhus 1900</h1>
+                            <h2>Hovedforening</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                
+
+                    <div class="nesteboks">
+                        <div id="nesteBoks">
+                            <h1>NYT MEDLEM?</h1>
+                            <h2>Find dit nye hold</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                        </div>
+                    </div>
+
+                
+                </div>
+
+
+            <div class="kalender-container">
+                <div class="camp">
+                    <h1>KAMPE</h1>
+
+                    <div class="mere">
+                        <div class="bil">
+                            <p>Aarhus 1900</p>
+                            <img src="1900.gif" alt="bad" style="width: 40%;" >
+                        </div>
+                        <p class="item">Vs.</p>
+                        <div class="bil">
+                            <p>VSK aarhus</p>
+                            <img src="VSKAarhus.png" alt="bad" style="width: 40%;" >
+                        </div>
+                    </div>
+
+                    <div class="mere">
+                        <div class="bil">
+                            <p>Aarhus 1900</p>
+                            <img src="1900.gif" alt="bad" style="width: 40%;" >
+                        </div>
+                        <p class="item">Vs.</p>
+                        <div class="bil">
+                            <p>Lyseng Fodbold</p>
+                            <img src="lyseng.png" alt="bad" style="width: 40%;" >
+                        </div>
+                    </div>
+
+                    <div class="mere">
+                        <div class="bil">
+                            <p>Aarhus 1900</p>
+                            <img src="1900.gif" alt="bad" style="width: 40%" >
+                        </div>
+                        <p class="item">Vs.</p>
+                        <div class="bil">
+                            <p>Aarhus Fremad</p>
+                            <img src="fremad.png" alt="bad" style="width: 40%;" >
+                        </div>
+                    </div>
+
+                    
+
+                        
+                </div>
+                
+            </div>
+
+    
     </main>
 
 
-
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 
     <footer>
         <p id="adresse">
@@ -48,17 +189,18 @@
             marker.setMap(map);
             }
         </script>
-            <div id="googleMap" style="width:30%;height:100px;margin:10px"></div>
+            <div id="googleMap" style="width:30%;height:100px;margin:10px; border-radius: 10px;"></div>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY_EkdPrXENNrS9yywlMR4escfJyPJ-KA&callback=myMap"></script>
 
         <div class="iconer">
-            <a href="https://www.facebook.com/aarhus1900fodbold/?locale=da_DK"><img src="img/fb.png" alt="facebook icon" class="pic"></a>
-            <a href="https://www.instagram.com/aarhus1900fodbold/"><img src="img/Instagram.png" alt="Instagram icon" class="pic"></a>
-            <a href="https://www.instagram.com/explore/locations/1033069962/brinchs-bodega-aarhus-1900-fodbold/"><img src="img/beer.webp" alt="beer icon" class="pic"></a>
+            <a href="https://www.facebook.com/aarhus1900fodbold/?locale=da_DK"><img src="fb.png" alt="facebook icon" class="pic"></a>
+            <a href="https://www.instagram.com/aarhus1900fodbold/"><img src="Instagram.png" alt="Instagram icon" class="pic"></a>
+            <a href="https://www.instagram.com/explore/locations/1033069962/brinchs-bodega-aarhus-1900-fodbold/"><img src="beer.webp" alt="beer icon" class="pic"></a>
         </div>
         
-        <a href="https://aarhus1900.dk/"><img id="storeLogo" src="img/logo.png" alt="logo"></a>
-    
+        <a href="https://aarhus1900.dk/"><img id="storeLogo" src="logo.png" alt="logo"></a>
+
     </footer>
 </body>
 </html>
+
