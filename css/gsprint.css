@@ -29,7 +29,7 @@ p{
   }
   
   #logo{
-    background: url("head.png");
+    background: url(/img/head.png);
     width: 100%;
     padding-left: 45.5%;
     padding-right: 45.5%;
@@ -66,7 +66,7 @@ h1, h2 {
 }
 
 .forsteboks {
-    background: url(bad.jpeg);
+    background: url(/img/bad.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -84,7 +84,7 @@ h1, h2 {
 }
 
 .andenboks {
-    background: url(hold.JPG);
+    background: url(/img/hold.JPG);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -102,7 +102,7 @@ h1, h2 {
 }
 
 .tredjeboks {
-    background: url(storlogo.png);
+    background: url(/img/storlogo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -122,7 +122,7 @@ h1, h2 {
 }
 
 .nesteboks {
-    background: url(hold.JPG);
+    background: url(/img/hold.JPG);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
