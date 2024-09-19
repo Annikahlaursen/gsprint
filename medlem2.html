@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medlem i aarhus 1900</title>
+
+    <link rel="stylesheet" href="css/gsprint.css">
+
+</head>
+<body>
+
+    <div class="dannebro1"></div>
+    <div class="dannebro2"></div>
+
+
+    <header>
+        <article>
+            <a href="index.html">
+                <img id="logo" src="img/1900.gif" alt="logo">
+            </a>
+            <a href="medlem.html">
+                <img id="burger" src="img/bmenu.png" alt="burgermenu">
+            </a>
+        </article>
+        
+    </header>
+
+    <main>
+        <div class="sporgeskema">
+            <div id="række1">
+                <div class="pil1"><h2><span style="font-size:100px;">&#10553;</span></h2></div>
+                <a href="medlem2.html"><div class="sporgsmaal1"><h1>Har du spillet før? </h1></div></a>
+                <div class="pil2"><h2><span style="font-size:100px;">&#10552;</span></h2></div>
+            </div>
+            
+            <div id="række2">
+                <div class="nej1">
+                    <a href="medlem3.html"><h1 class="svar">Nej</h1></a>
+  
+                </div>
+                <div class="nej1">
+                    <a href="medlem3.html"><h1 class="svar">Ja</h1></a>
+                </div>
+            </div>
+    
+            </main>
+
+
+
+    <footer>
+        <p id="adresse">
+            Aarhus 1900</br>
+            Fodbold Augustenborggade 29</br>
+            Aarhus C</br>
+            aarhus1900fodbold@e-mail.dk
+        </p>
+        <!-- Google maps -->
+        <script>
+            function myMap() {
+            var mapProp= {
+            center:new google.maps.LatLng(56.14521864,10.18214405),
+            zoom:20,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({position: myCenter});
+
+            marker.setMap(map);
+            }
+        </script>
+            <div id="googleMap" style="width:30%;height:100px;margin:10px"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY_EkdPrXENNrS9yywlMR4escfJyPJ-KA&callback=myMap"></script>
+
+        <div class="iconer">
+            <a href="https://www.facebook.com/aarhus1900fodbold/?locale=da_DK"><img src="img/fb.png" alt="facebook icon" class="pic"></a>
+            <a href="https://www.instagram.com/aarhus1900fodbold/"><img src="img/Instagram.png" alt="Instagram icon" class="pic"></a>
+            <a href="https://www.instagram.com/explore/locations/1033069962/brinchs-bodega-aarhus-1900-fodbold/"><img src="img/beer.webp" alt="beer icon" class="pic"></a>
+        </div>
+        
+        <a href="https://aarhus1900.dk/"><img id="storeLogo" src="img/logo.png" alt="logo"></a>
+    
+    </footer>
+
+    
+    
+</body>
+</html>
